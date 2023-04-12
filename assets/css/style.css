@@ -1,3 +1,15 @@
 p {
     color: red;
 }
+canvas {
+    border: 1px solid chocolate;
+}
+/*//todo obviously change later.*/
+
+button {
+
+}
+
+audio {
+    display: none;
+}
