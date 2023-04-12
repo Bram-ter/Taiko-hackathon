@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Lalita One';
+    src: url(../fonts/LilitaOne-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    width: 100dvw;
+    background: linear-gradient(rgb(255, 206, 73), rgb(255, 149, 0));
+}
+
+.background{
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.play{
+    border: 3px solid white;
+    outline: 5px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(rgb(255, 206, 73), rgb(255, 149, 0));;
+    padding: 10px 2em;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: 'Lalita One';
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 75%;
+    text-align: center;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
