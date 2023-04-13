@@ -3,10 +3,17 @@ import {generateNotesFromNoteMap} from "./rythm.js";
 import {drawBeatMap} from "./draw.js";
 import {displayCombo, displayScore} from "./score.js";
 import {noteMaps as noteMap} from "./noteMaps.js";
+import {audioSources} from "./audioSources.js";
 
 const canvas = document.getElementById("game-canvas");
 const startButton = document.querySelector("button");
 const taikoCv = canvas.getContext("2d");
+
+const urlParams = new URLSearchParams(window.location.search)
+const songId = urlParams.get('songId')
+
+const songName = decodeURIComponent(urlParams.get('songName'))
+document.getElementById('song-name').textContent = songName
 
 const updateCanvasWidth = () => {
     canvas.width = window.innerWidth * 0.75;
@@ -46,7 +53,7 @@ let orange1 = new Image();
 orange1.src = "assets/drums/orange1.svg";
 
 
-const audioUrl = "assets/music/weare.mp3";
+const audioUrl = audioSources[songId]
 
 const hitSoundJ = new Audio('assets/sounds/drum.mp3')
 const hitSoundK = new Audio('assets/sounds/bluedrum.mp3')
@@ -63,12 +70,12 @@ Transport.bpm.value = bpm;
 const pixelsPerBeat = 4250;
 const noteSpeed = (Transport.bpm.value / 60) * (pixelsPerBeat / 1000)
 
-
+const currentNoteMap = noteMap[songId]
 startButton.addEventListener("click", async function () {
     console.log("im getting clicked");
     canvas.setAttribute("tabindex", "0");
     canvas.focus();
-    generateNotesFromNoteMap(noteMap.song2, BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT, notes);
+    generateNotesFromNoteMap(currentNoteMap, BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT, notes);
     await player.load(audioUrl);
     player.start();
     Transport.start();
