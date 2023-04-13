@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Bram-ter/Taiko-hackathon/issues"
   },
-  "homepage": "https://github.com/Bram-ter/Taiko-hackathon#readme"
+  "homepage": "https://github.com/Bram-ter/Taiko-hackathon#readme",
+  "dependencies": {
+    "beat": "^1.0.6",
+    "beatjs": "^0.1.0",
+    "tone": "^14.7.77"
+  }
 }
