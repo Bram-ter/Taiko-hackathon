@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/js/main.js" type="module" defer></script>
     <title>Taiko game</title>
 </head>
 <body class="game">
     <article>
         <h1>Game title</h1>
         <p>Game description</p>
+        <button>Start game</button>
     </article>
     <section>
         <article>
@@ -30,14 +32,18 @@
             </div>
             <span>12345</span>
         </article>
-        <div class="hitpoint">
-            <div></div>
-        </div>
 
-        <div class="drum">
+        
+        <canvas id="game-canvas"></canvas>
+
+        <!-- <div class="hitpoint">
+            <div></div>
+        </div> -->
+
+        <!-- <div class="drum">
             <img src="../assets/drums/blue2.svg" alt="image of a drum character">
             <p>Don</p>
-        </div>
+        </div> -->
     </section>
 </body>
 </html>
