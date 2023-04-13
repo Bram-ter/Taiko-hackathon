@@ -24,6 +24,13 @@ body{
     background-size: cover;
 }
 
+@keyframes play-animation {
+    0% { transform: translate(0, -15em); }
+    40% { transform: translate(0, 0em); }
+    60% { transform: translate(0, -4em); }
+    100% { transform: translate(0, 0); }
+}
+
 .play{
     border: 3px solid white;
     outline: 5px solid black;
@@ -37,22 +44,13 @@ body{
     position: absolute;
     left: 25%;
     top: 75%;
+    width: 50%;
     text-align: center;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
   -moz-outline-radius: 10px;
   -webkit-text-stroke-color: black;
-}
-
-@keyframes play-animation {
-    0% { transform: translate(0, -15em); }
-    40% { transform: translate(0, 0em); }
-    60% { transform: translate(0, -4em); }
-    100% { transform: translate(0, 0); }
-}
-
-.play{
-    animation: play-animation 2s ease-out;
+  animation: play-animation 2s ease-out;
 }
 
 h1{
@@ -146,4 +144,76 @@ li{
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+section{
+    background-color: orange;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 60%;
+    display: block;
+    margin: 2em auto;
+    height: 20em;
+}
+
+div{
+    background-color: white;
+    width: 95%;
+    display: block;
+    margin: 1em auto;
+    height: 18em;
+}
+
+.continue{
+    border: 3px solid white;
+    outline: 5px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(rgb(255, 206, 73), rgb(255, 149, 0));;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: 'Lalita One';
+    position: absolute;
+    left: 35%;
+    top: 90%;
+    width: 30%;
+    text-align: center;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -moz-outline-radius: 10px;
+  -webkit-text-stroke-color: black;
+}
+
+img{
+    position: relative;
+    z-index: 100;
+    width: 10%;
+    margin-top: 16em;
+    left: 52%;
+    opacity: 0;
+    animation: click-animation 1.2s linear;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+@keyframes click-animation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.diffi{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: -13em;
+    width: 90%;
+}
+
+.diffi li a{
+    font-size: 1.5em;
+    height: 6em;
+    width: 100%;
+    margin: 0 0em;
+    padding-top: 4em;
 }
