@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 277.18 370.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #895540;
+      }
+
+      .cls-3 {
+        fill: #635134;
+      }
+
+      .cls-4 {
+        fill: #f3e8d7;
+      }
+
+      .cls-4, .cls-5, .cls-6 {
+        stroke: #c2b59b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #f3efe3;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="261.69" x2="277.18" y2="261.69" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b67a66"/>
+      <stop offset="1" stop-color="#ac715b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2.03" y1="164.14" x2="271.56" y2="164.14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e2cdb6"/>
+      <stop offset=".27" stop-color="#9d896d"/>
+      <stop offset="1" stop-color="#d2be9f"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="M269.77,153.14c4.78,17.48,10.32,46.4,5.63,81.32-3.05,22.68-9.38,69.72-46.21,102.3-45.27,40.03-122.29,45.55-171.96,9.01C16.21,315.6,7.15,266.56,3.17,245.05c-6.58-35.64-1.57-65.57,2.85-83.25,87.92-2.88,175.83-5.77,263.75-8.65Z"/>
+    <circle class="cls-2" cx="137.75" cy="267.71" r="102.52"/>
+    <ellipse class="cls-7" cx="136.79" cy="164.14" rx="134.77" ry="133.83"/>
+    <ellipse class="cls-4" cx="137.75" cy="129.71" rx="132.01" ry="129.21"/>
+    <circle class="cls-5" cx="137.75" cy="122.84" r="102.52"/>
+    <line class="cls-6" x1="137.75" y1="225.36" x2="137.75" y2="20.31"/>
+    <circle class="cls-3" cx="137.75" cy="279.25" r="8.24"/>
+    <ellipse class="cls-3" cx="87.3" cy="269.17" rx="6.78" ry="8.12" transform="translate(-80.71 41.47) rotate(-18.45)"/>
+    <ellipse class="cls-3" cx="188.21" cy="269.17" rx="8.12" ry="6.78" transform="translate(-121.48 378.56) rotate(-74.49)"/>
+    <ellipse class="cls-3" cx="42.64" cy="240.37" rx="6.1" ry="7.3" transform="translate(-157.48 100.56) rotate(-45)"/>
+    <ellipse class="cls-3" cx="229.87" cy="240.37" rx="7.3" ry="6.1" transform="translate(-102.64 232.94) rotate(-45)"/>
+    <ellipse class="cls-3" cx="20.74" cy="211.23" rx="4.37" ry="5.24" transform="translate(-96.26 34.15) rotate(-27.85)"/>
+    <ellipse class="cls-3" cx="253.44" cy="211.1" rx="5.24" ry="4.37" transform="translate(-51.6 336.59) rotate(-62.15)"/>
+    <ellipse class="cls-3" cx="10.32" cy="183.11" rx="4.37" ry="5.24" transform="translate(-47 8.9) rotate(-14.99)"/>
+    <ellipse class="cls-3" cx="264.76" cy="182.73" rx="5.24" ry="4.37" transform="translate(19.78 391.24) rotate(-75.01)"/>
+  </g>
+</svg>
