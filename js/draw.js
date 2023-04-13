@@ -13,7 +13,7 @@ export function drawBeatMap(taikoCv, BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT, hitZoneX, 
     taikoCv.fill();
 
     // inner cicrle drawing
-    const bonusCircleRadius = hitZoneRadius * 0.6;
+    const bonusCircleRadius = hitZoneRadius * 0.5;
     taikoCv.fillStyle = "rgba(255, 255, 255, 0.5)";
     taikoCv.beginPath();
     taikoCv.arc(hitZoneX, hitZoneY, bonusCircleRadius, 0, 2 * Math.PI);

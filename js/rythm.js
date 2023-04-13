@@ -10,7 +10,7 @@ export function generateNotesFromNoteMap(noteMap, BEAT_MAP_WIDTH, BEAT_MAP_HEIGH
                 type: noteType,
                 key: noteKey,
                 x: BEAT_MAP_WIDTH,
-                y: BEAT_MAP_HEIGHT / 2,
+                y: BEAT_MAP_HEIGHT / 2.5,
                 hit: false,
             };
             notes.push(note);
