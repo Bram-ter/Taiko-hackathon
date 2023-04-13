@@ -1,7 +1,8 @@
 export function drawBeatMap(taikoCv, BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT, hitZoneX, hitZoneY, hitZoneRadius, notes, noteSpeed,blue1,orange1, hitZoneColor)
 {
+    console.log(BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT)
     taikoCv.clearRect(0, 0, BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT);
-    taikoCv.fillStyle = "gray";
+    taikoCv.fillStyle = "black";
     taikoCv.fillRect(0, 0, BEAT_MAP_WIDTH, BEAT_MAP_HEIGHT);
     taikoCv.fillStyle = "white";
     taikoCv.fillRect(0, BEAT_MAP_HEIGHT / 2, BEAT_MAP_WIDTH, 1);

@@ -4,13 +4,37 @@ import {drawBeatMap} from "./draw.js";
 import {displayCombo, displayScore} from "./score.js";
 import {noteMaps as noteMap} from "./noteMaps.js";
 
-
 const canvas = document.getElementById("game-canvas");
 const startButton = document.querySelector("button");
 const taikoCv = canvas.getContext("2d");
 
-const BEAT_MAP_WIDTH = 1000;
-const BEAT_MAP_HEIGHT = 100;
+const updateCanvasWidth = () => {
+    canvas.width = window.innerWidth * 0.75;
+    const test = canvas.width; // Declare the 'test' variable here
+    console.log(test);
+    
+    // Add any additional logic for updating canvas content or rendering here
+    return test;
+  };
+
+  const updateCanvasHeight = () => {
+    canvas.height = window.innerHeight / 3.32;
+    const test2 = canvas.height;
+    console.log(test2);
+
+    return test2;
+  }
+  
+  // Initial call to set canvas width on page load
+  const BEAT_MAP_WIDTH = updateCanvasWidth();
+  const BEAT_MAP_HEIGHT = updateCanvasHeight();
+  
+  window.addEventListener('resize', () => {
+    const BEAT_MAP_WIDTH = updateCanvasWidth();
+    const BEAT_MAP_HEIGHT = updateCanvasHeight();
+    // Use the 'BEAT_MAP_WIDTH' variable here to adjust the canvas content or rendering as needed
+  });
+
 const hitZoneX = 100;
 const hitZoneY = BEAT_MAP_HEIGHT / 2;
 const hitZoneRadius = 50;
