@@ -45,7 +45,7 @@ export const noteMaps = {
         {time:35.0 , type: "orange1", key: 'j'},
         {time:35.5 , type: "orange1", key: 'j'},
 
-
+        //oNE PIECE
         {time:37.0 , type: "orange1", key: 'j'},
         {time:37.5 , type: "orange1", key: 'j'},
 
