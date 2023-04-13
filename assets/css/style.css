@@ -16,6 +16,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "title-font";
+    margin: 0;
 }
 
 .game {
@@ -25,22 +26,21 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.game article {
+.game > article {
     position: absolute;
     top: 1em;
     right: 1em;
 }
 
-.game article h1,
 .game article p {
     margin: 0;
 }
 
-.game article h1 {
+.game > article h1 {
     font-size: 2em;
 }
 
-.game article p {
+.game > article p {
     border-radius: 3em;
     font-size: .85em;
     padding-top: .15em;
@@ -59,19 +59,105 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #2c2c2c;
 }
 
-.game section figure {
+.game section article {
+    position: relative;
     margin: 0;
     padding: 0;
-    width: 15em;
-    background-color: red;
+    width: 20em;
+    background-color: #7fa723;
+}
+
+.game section article .nameplate {
+    position: absolute;
+    border-radius: 1em 0em 1em 0em;
+    text-align: center;
+    top: -1em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+    background-color: green;
+}
+
+.game section article .bongo {
+    position: absolute;
+    right: .5em;
+    bottom: .3em;
+    max-width: 5em;
+    z-index: 9999;
+}
+
+.game section article .difficulty {
+    position: absolute;
+    left: 1.5em;
+    bottom: 4em;
+    max-width: 7em;
+    z-index: 9999;
+}
+
+.game section article .bongo img,
+.game section article .difficulty img {
+    width: 100%;
+}
+
+.game section article .difficulty span {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -.5em;
+    margin: 0 auto;
+}
+
+.game section article .bongo span,
+.game section article .bongo p {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.game section article .bongo span {
+    top: 0em;
+    font-size: 2em;
+}
+
+.game section article .difficulty span {
+    font-size: 1.2em;
+}
+
+.game section article .bongo p {
+    top: 2.5em;
+}
+
+.game section article > span {
+    position: absolute;
+    background-color: hsla(0, 0%, 29%, 0.257);
+    text-align: center;
+    font-size: 1.5em;
+    width: 85%;
+    border-radius: 1em 0em 0em 1em;
+    padding: .5em;
+    padding-top: .10em;
+    padding-bottom: .10em;
+    bottom: .2em;
+    right: 0;
+}
+
+.game section article div p,
+.game section article div h2 {
+    margin-top: .35em;
+    margin-bottom: .35em;
 }
 
 .game section .drum {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    right: 1em;
     width: 5em;
     height: 100%;
 }
@@ -161,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 768px) {
     .game section {
-        height: 50dvh;
+        height: 60dvh;
     }
 }
 
