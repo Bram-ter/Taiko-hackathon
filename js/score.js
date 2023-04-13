@@ -19,5 +19,5 @@ export function displayCombo(combo) {
         document.body.appendChild(comboElement);
     }
 
-    comboElement.textContent = `Combo: ${combo}`;
+    comboElement.textContent = `${combo}`;
 }
