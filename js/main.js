@@ -12,28 +12,28 @@ const updateCanvasWidth = () => {
     canvas.width = window.innerWidth * 0.75;
     const test = canvas.width; // Declare the 'test' variable here
     console.log(test);
-    
+
     // Add any additional logic for updating canvas content or rendering here
     return test;
-  };
+};
 
-  const updateCanvasHeight = () => {
+const updateCanvasHeight = () => {
     canvas.height = window.innerHeight / 3.32;
     const test2 = canvas.height;
     console.log(test2);
 
     return test2;
-  }
-  
-  // Initial call to set canvas width on page load
-  const BEAT_MAP_WIDTH = updateCanvasWidth();
-  const BEAT_MAP_HEIGHT = updateCanvasHeight();
-  
-  window.addEventListener('resize', () => {
+}
+
+// Initial call to set canvas width on page load
+const BEAT_MAP_WIDTH = updateCanvasWidth();
+const BEAT_MAP_HEIGHT = updateCanvasHeight();
+
+window.addEventListener('resize', () => {
     const BEAT_MAP_WIDTH = updateCanvasWidth();
     const BEAT_MAP_HEIGHT = updateCanvasHeight();
     // Use the 'BEAT_MAP_WIDTH' variable here to adjust the canvas content or rendering as needed
-  });
+});
 
 const hitZoneX = 100;
 const hitZoneY = BEAT_MAP_HEIGHT / 2;
@@ -47,6 +47,7 @@ orange1.src = "assets/drums/orange1.svg";
 
 
 const audioUrl = "assets/music/weare.mp3";
+
 const hitSoundJ = new Audio('assets/sounds/drum.mp3')
 const hitSoundK = new Audio('assets/sounds/bluedrum.mp3')
 let hitZoneColor = "rgba(255, 0, 0, 0.5)";
