@@ -13,11 +13,12 @@ body{
     height: 100dvh;
     width: 100dvw;
     overflow: hidden;
-    background: linear-gradient(rgb(255, 206, 73), rgb(255, 149, 0));
+    background-image: url(../images/assets.png);
+    background-size: contain;
 }
 
 .background{
-    background-image: url(https://github.com/Bram-ter/Taiko-hackathon/blob/Ting/images/bg.png?raw=true);
+    background-image: url(../images/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +57,6 @@ body{
 
 h1{
     display: block;
-    /* margin-top: 1em; */
     height: 100%;
     width: 100%;
     font-family: 'Lalita One';
@@ -96,10 +96,11 @@ a{
 }
 
 #blue:focus{
+    outline: 5px solid rgb(255, 28, 28);
     padding: 1em 2em;
-    width: 110%;
-    /* display: block;
-    margin: auto; */
+    width: 105%;
+    display: block;
+    margin-left: -2.5%;
     z-index: 100;
 }
 
@@ -131,14 +132,18 @@ a{
 
 ul{
     overflow-y: scroll;
-    width: 55%;
-    height: 13em;
+    width: 60%;
+    height: 16em;
     display: block;
-    margin: 4em auto 0 auto;
+    margin: 1em auto 0 auto;
     list-style-type: none;
 }
 
 li{
-    margin: 3em auto;
-    width: 99%;
+    margin: 3em auto 3em auto;
+    width: 85%;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

@@ -94,7 +94,7 @@ canvas.addEventListener("keydown", function (event) {
 
             if (note.hit) continue;
 
-            const hitZone = hitZoneX;
+            const hitZone = hitZoneX - 10;
             const hitThreshold = 50;
             const bonusThreshold = 10;
 
@@ -108,12 +108,14 @@ canvas.addEventListener("keydown", function (event) {
                         score++; // 1 point if you suck
                     }
                     note.hit = true;
+
                     console.log(`Key ${event.key} has been pressed. Score: ${score}`);
                     displayScore(score)
                     // yoink the note away
                     notes.splice(i, 1);
                     i--;
                     noteHit = true;
+                    break
                 }
             }
         }
@@ -122,6 +124,7 @@ canvas.addEventListener("keydown", function (event) {
             combo++;
             console.log(`Current combo is ${combo}`)
             displayCombo(combo)
+
         } else {
             combo = 0;
             console.log(`Combo is 0`)
