@@ -32,10 +32,13 @@ body{
     font-weight: bold;
     background: linear-gradient(rgb(255, 206, 73), rgb(255, 149, 0));;
     font-size: 2em;
+    width: 10em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-decoration: none;
     font-family: 'Lalita One';
     position: absolute;
-    left: 25%;
     top: 75%;
     text-align: center;
     -webkit-text-fill-color: white;
@@ -73,6 +76,7 @@ h1{
 a{
     border: 3px solid white;
     outline: 5px solid black;
+    cursor: pointer;
     border-radius: 10px;
     color: white;
     font-weight: bold;
