@@ -47,8 +47,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     background-image: 
-     url(/assets/drums/game_background1.jpg), 
-     url(/assets/drums/game_background2.jpg)
+     url(../drums/game_background1.jpg), 
+     url(../drums/game_background2.jpg)
     ;
     background-repeat: no-repeat;
     background-position: top, bottom;
@@ -106,7 +106,7 @@ button:hover {
     padding: 0;
     width: 26%;
     z-index: 9999;
-    background-image: url(/assets/drums/system_background.jpg);
+    background-image: url(../drums/system_background.jpg);
     background-size: contain;
 }
 
@@ -121,7 +121,7 @@ button:hover {
     right: 0;
     margin: 0 auto;
     width: 80%;
-    background-image: url(/assets/drums/card_background.jpg);
+    background-image: url(../drums/card_background.jpg);
     background-size: cover;
 }
 
@@ -215,6 +215,9 @@ button:hover {
     padding-bottom: .10em;
     bottom: .2em;
     right: 0;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }
 
 .game section article div p,
