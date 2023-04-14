@@ -185,7 +185,7 @@ div{
   -webkit-text-stroke-color: black;
 }
 
-img{
+.click{
     position: relative;
     z-index: 100;
     width: 10%;
@@ -202,16 +202,30 @@ img{
     100% { opacity: 0; }
 }
 
+.diff1{
+    background: linear-gradient(rgb(164, 229, 255), rgb(49, 186, 255));;
+}
+
+.diff2{
+    background: linear-gradient(rgb(164, 205, 255), rgb(49, 118, 255));
+}
+
+.diff3{
+    background: linear-gradient(rgb(208, 164, 255), rgb(149, 49, 255));
+}
+
 .diffi{
     display: flex;
     flex-direction: row;
     gap: 1em;
-    margin-top: -13em;
+    margin-top: -13.5em;
     width: 90%;
 }
 
 .diffi li{
     width: 29%;
+    display: flex;
+    justify-content: center;
 }
 
 .diffi li a{
@@ -222,4 +236,12 @@ img{
     width: 100%;
     margin: auto;
     padding-top: 4em;
+}
+
+.ez{
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    opacity: 1;
+    top: 52%;
 }
