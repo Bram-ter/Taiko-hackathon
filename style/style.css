@@ -17,6 +17,7 @@ body{
     background-size: contain;
 }
 
+/* Background van homepage */
 .background{
     background-image: url(../images/bg.png);
     background-position: center;
@@ -24,6 +25,7 @@ body{
     background-size: cover;
 }
 
+/* Button die naar beneden komt */
 @keyframes play-animation {
     0% { transform: translate(0, -15em); }
     40% { transform: translate(0, 0em); }
@@ -31,6 +33,7 @@ body{
     100% { transform: translate(0, 0); }
 }
 
+/* Play button */
 .play{
     border: 3px solid white;
     outline: 5px solid black;
@@ -244,4 +247,12 @@ div{
     height: 5em;
     opacity: 1;
     top: 52%;
+}
+
+.jk{
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    top: 38%;
+    left: 40%;
 }
