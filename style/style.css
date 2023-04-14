@@ -210,10 +210,16 @@ img{
     width: 90%;
 }
 
+.diffi li{
+    width: 29%;
+}
+
 .diffi li a{
+    display: flex;
+    justify-content: center;
     font-size: 1.5em;
     height: 6em;
     width: 100%;
-    margin: 0 0em;
+    margin: auto;
     padding-top: 4em;
 }
